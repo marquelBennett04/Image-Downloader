@@ -6,7 +6,7 @@ def downloadFile(url):
     localFileName = url.split('/')[-1]
     with requests.get(url, stream = True) as r:
         print("Downloading Info...")
-        with open ("C:/Users/ Marquel Bennett/Desktop/" + localFileName + 'wb') as f:
+        with open ("C:/Users/Marquel/Desktop/" + localFileName + 'wb') as f:
             print("Writing data to file...")
             for chunk in r.iter_content (chunk_size = 8192):
                 f.write(chunk)
